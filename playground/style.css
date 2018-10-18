@@ -1,0 +1,17 @@
+body {
+  background-color: #006699
+}
+h1{
+  background-color: gray;
+  padding: 10px;
+  width: 800px;
+  text-align: center;
+  margin: auto;
+  color: red;
+  font-size: 35px;
+}
+body{
+  text-align: center;
+  color: orange;
+  font-size: 18px;
+}
