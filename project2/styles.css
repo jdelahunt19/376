@@ -24,3 +24,12 @@ body{
   color: orange;
   font-size: 22px;
 }
+.button{
+  text-decoration: none;
+  background-color: white;
+  color: blue;
+  font-family: Courier;
+  text-align: center;
+  margin-right: 5px;
+  padding: 10px;
+}
