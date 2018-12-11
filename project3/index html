@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Some Equations</title>
+        
+        <link rel="stylesheet" src="styles.css"/>
+        <script src ="script.js"></script>
+    </head>
+    
+    <body>
+    
+        <h1>Check Out My Equations</h1>
+        <h2>Pythagorean Theorum</h2>
+        
+        <form>
+            (a: <input type="text" id="aValue" name="aValue"/>)
+            (b: <input type="text" id="bValue" name="bValue"/>)
+            <br/>
+            <button type="button" onclick="pythagorean()">Solve</button>
+        </form>
+        
+        Result: <span id="result1"></span>
+        
+        <h2>Volume of a Rectangular Prism</h2>
+        <form>
+            (c: <input type="text" id="cValue" name="cValue"/>)
+            (d: <input type="text" id="dValue" name="dValue"/>)
+            (e: <input type="text" id="eValue" name="eValue"/>)
+            <br/>
+            <button type="button" onclick="Volume()">Solve</button>
+        </form>
+        Result: <span id="result2"></span>
+        
+        <h2>Volume of a Square Pyramid</h2>
+        <form>
+            (f: <input type="text" id="fValue" name="fValue"/>)
+            (g: <input type="text" id="gValue" name="gValue"/>)
+            (h: <input type="text" id="hValue" name="hValue"/>)
+            <br/>
+            <button type="button" onclick="VolumeOfPyramid()">Solve</button>
+        </form>
+        Result: <span id="result3"></span>
+    </body>
+    
+</html>
