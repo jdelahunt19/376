@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basketball Court</title>
+</head>
+<body>
+    <svg width="800" height="800">
+    
+    <rect width="600" height="300" 
+    style="stroke:black;fill:none"/>
+    
+    <circle cx="300" cy="150" r="45" stroke="black" stroke-width="4"fill="yellow"/>
+    <g id="half">
+    <rect width="60" height ="45" x="0" y="130"
+    style="stroke:black;fill:yellow;stroke-width:4"/>
+    <polyline points="0,45 55,45 105,65 120,90 120,225 105,250 55,260 0,260" 
+    style="stroke:black;fill:transparent; stroke-width:3"/>
+    <path d="M 60,130 A 22.5,22.5 0,0,1 60,175"
+    style="stroke:black;fill:transparent;stroke-width:3"/>
+    <line x1="300" y1="0"
+            x2="300" y2="300"
+            stroke="black"
+            stroke-width="5"/>
+    <text x="150" y="280" fill="green"stroke="black"font-size="48">Celtics</text>
+    </g>
+    
+    <use xlink:href="#half" transform="translate(600, 0) rotate(180, 0, 150)" />
+    
+    </svg>
+</body>
+</html>

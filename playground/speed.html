@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Speed Checker</title>
+
+        <script>
+
+        function checkSpeed() {
+            var speed = parseInt(document.getElementById("speed").value);
+
+            var result = "";
+            if (isNaN(speed)) {
+                result = "That's not a number!";
+            } else {
+                var scale = document.getElementById("scale").value;
+                if (scale == "city") {
+                    temperature = temperature / 2;
+            }
+
+                if (speed < 60) {
+                    result = "Speed up!";
+                } else if (speed > 80) {
+                    result = "Slow Down!";
+                } else {
+                    result = "you are responsible.";
+                }
+            }
+
+            document.getElementById("result").innerHTML = result;
+        }
+
+        </script>
+    </head>
+
+    <body>
+
+        <h1>Speed Checker</h1>
+
+        <p>
+            The focus of this lesson is <b>Speed</b>.
+        </p>
+
+        <form>
+            What's the speed?
+            <input type="text" id="speed" name="speed" size="5" />
+            <select id="scale" name="scale">
+                <option value="highway">Highway</option>
+                <option value="city">City</option>
+            <select>
+            <button type="button" onclick="checkSpeed()">Analyze</button>
+        </form>
+
+        <h2 id="result"></h2>
+    </body>
+</html>
