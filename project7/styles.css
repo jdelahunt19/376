@@ -1,0 +1,46 @@
+#background {
+    fill: white;
+}
+
+#message {
+    fill: #ff0000;
+    font-family: Arial, sans-serif;
+    font-size: 18pt;
+    text-anchor: middle;
+}
+#throws {
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+    text-align: center;
+    width: 500px;
+}
+#paper1 {
+    fill: white;
+    stroke: black;
+    stroke-width: 3px;
+}
+#rock1 {
+    fill: grey;
+    stroke: black;
+    stroke-width: 3px;
+}
+#scissors1 {
+    fill: yellow;
+    stroke: black;
+    stroke-width: 3px;
+}
+#paper2 {
+    fill: white;
+    stroke: black;
+    stroke-width: 3px;
+}
+#rock2 {
+    fill: grey;
+    stroke: black;
+    stroke-width: 3px;
+}
+#scissors2 {
+    fill: yellow;
+    stroke: black;
+    stroke-width: 3px;
+}

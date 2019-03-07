@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Die</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function rollDie(){
+            var dieNum = "d1"
+            
+            $(".pip").attr("visibility", "hidden");
+            
+            
+            var roll= Math.ceil (Math.random()*6);
+            console.log(roll);
+        }
+    </script>
+    </body>
+</head>
+<body>
+
+
+    <svg width="500" height="500">
+    
+    <rect id="d1" x="100" y="100" width="100" height="100" 
+    style="stroke:black; fill:none"/>
+    
+    <circle id="d1p1" cx="125" cy="125" r="6" stroke="black" fill="black" visibility="visable"/>
+    <circle id="d1p2" cx="125" cy="150" r="6" stroke="black" fill="black" visibility="visable"/>
+    <circle id="d1p3" cx="125" cy="175" r="6" stroke="black" fill="black" visibility="visable"/>
+    <circle id="d1p4" cx="150" cy="150" r="6" stroke="black" fill="black" visibility="visable"/>
+    <circle id="d1p5" cx="175" cy="125" r="6" stroke="black" fill="black" visibility="visable"/>
+    <circle id="d1p6" cx="175" cy="150" r="6" stroke="black" fill="black" visibility="visable"/>
+    <circle id="d1p7" cx="175" cy="175" r="6" stroke="black" fill="black" visibility="visable"/>
+    
+    </svg>
+    
+    <button onclick="rollDie()">Roll the Die!</button>
+    <script>
+        function rollDie(){
+            var roll= Math.ceil (Math.random()*6);
+            console.log(roll);
+        }
+    </script>
+    </body>
+</html>
